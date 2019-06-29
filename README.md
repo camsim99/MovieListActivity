@@ -1,6 +1,6 @@
-# Project 2 - *Name of App Here*
+# Project 2 - Lates Movie Listings (LML)
 
-**Latest Movie Listings (LML)** shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
+**LML** shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
 Time spent: **12ish** hours spent in total
 

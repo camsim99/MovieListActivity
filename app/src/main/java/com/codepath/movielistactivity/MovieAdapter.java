@@ -52,7 +52,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     }
 
     @NonNull
-    //create and inflates a new view
+    //create and inflates a new view (this is what stops the app from making a new view everytime you scroll up and need to see a new item)
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         //get the context and create the inflater
@@ -64,7 +64,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         return new ViewHolder(movieView);
     }
 
-    //binds an inflated view to a new item
+    //binds an inflated view to a new item (as you scroll up, it adds new items in the data to the view for you to see)
+    //can add business logic here that you may need to have function as the view changes
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
         //get the movie data at the specified position
@@ -107,6 +108,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     }
 
     //create the viewholder as a static inner class
+    //this is the view that we recycle as we scroll down
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         //track view objects
